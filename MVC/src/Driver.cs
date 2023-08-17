@@ -5,12 +5,19 @@
 
 namespace MVC
 {
+    /// <summary>
+    /// Class <c>Driver</c> is the driver class for the MVC application.
+    /// </summary>
     class Driver
     {
+        /// <summary>
+        /// Method <c>Main</c> is the entry point for the application.
+        /// </summary>
+        /// <param name="args">Array of command line arguments.</param>
         public static void Main(string[] args)
         {
             // Create the View
-            View view = new View();
+            View view = new View()!;
 
             // Create the Model
             Model model = new Model(view);

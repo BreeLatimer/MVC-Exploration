@@ -6,10 +6,13 @@
 
 namespace MVC
 {
+    /// <summary>
+    /// Class <c>View</c> handles all user interaction and displays information to the user.
+    /// </summary>
     class View
     {
         // The View class has a reference to the Controller
-        private Controller controller;
+        private Controller? controller;
 
         // Constructor
         public View(Controller controller)
@@ -22,43 +25,102 @@ namespace MVC
         {
         }
 
-        // This method displays the main menu to the user
-        public void DisplayMenu()
+        /// <summary>
+        /// Method <c>DisplayGreeting</c> displays a greeting to the user.
+        /// </summary>
+        public void DisplayGreeting()
         {
-            Console.WriteLine("Welcome to the Class Roster Application!");
-            Console.WriteLine("Please select an option:");
-            Console.WriteLine("1. Add Student");
-            Console.WriteLine("2. Remove Student");
-            Console.WriteLine("3. View Roster");
-            Console.WriteLine("4. Exit\n");
+            Console.WriteLine("Welcome to the Class Roster Application!\n");
         }
 
-        // This method gets the user's menu selection
+        /// <summary>
+        /// Method <c>DisplayMenu</c> displays the menu to the user.
+        /// </summary>
+        public void DisplayMenu()
+        {
+            Console.WriteLine("Please select an option:");
+            Console.WriteLine("1. Add Student");
+            Console.WriteLine("2. View Student");
+            Console.WriteLine("3. Remove Student");
+            Console.WriteLine("4. View Roster");
+            Console.WriteLine("5. Exit\n");
+        }
+
+        /// <summary>
+        /// Method <c>GetMenuSelection</c> gets the user's menu selection.
+        /// </summary>
+        /// <returns>value of selected menu item</returns>
         public int GetMenuSelection()
         {
             // Get the user's input
-            string input = Console.ReadLine();
+            string input = Console.ReadLine()!;
 
             // Validate the input
             int selection;
-            while (!int.TryParse(input, out selection) || selection < 1 || selection > 4)
+            while (!int.TryParse(input, out selection) || selection < 1 || selection > 5)
             {
-                Console.WriteLine("Invalid input. Please enter a number between 1 and 3.\n");
-                input = Console.ReadLine();
+                Console.WriteLine("Invalid input. Please enter a number between 1 and 5.\n");
+                input = Console.ReadLine()!;
             }
 
             // Return the user's selection
             return selection;
         }
 
-        // This method gets the student's name from the user
+        /// <summary>
+        /// Method <c>GetStudentName</c> gets the student's name from the user.
+        /// </summary>
+        /// <returns>String representation of the name of the student as given by the user.</returns>
         public string GetStudentName()
         {
             Console.WriteLine("Please enter the student's name:");
-            return Console.ReadLine();
+            return Console.ReadLine()!;
         }
 
-        // This method displays the student roster to the user
+        /// <summary>
+        /// Method <c>GetStudentGPA</c> gets the student's GPA from the user.
+        /// </summary>
+        /// <returns>String representation of the GPA of the student as given by the user.</returns>
+        public string GetStudentGPA()
+        {
+            Console.WriteLine("Please enter the student's GPA:");
+            return Console.ReadLine()!;
+        }
+
+        /// <summary>
+        /// Method <c>GetStudentMajor</c> gets the student's major from the user.
+        /// </summary>
+        /// <returns>String representation of the student's major as given by the user.</returns>
+        public string GetStudentMajor()
+        {
+            Console.WriteLine("Please enter the student's major:");
+            return Console.ReadLine()!;
+        }
+
+        /// <summary>
+        /// Method <c>GetStudentEC</c> gets the student's extra curricular activity from the user.
+        /// </summary>
+        /// <returns>String representation of the students extra curricular activity as given by the user.</returns>
+        public string GetStudentEC()
+        {
+            Console.WriteLine("Please enter the student's extra curricular activity:");
+            return Console.ReadLine()!;
+        }
+
+        /// <summary>
+        /// Method <c>DisplayStudent</c>Displays the student's information to the user.
+        /// </summary>
+        /// <param name="student">Student object to be displayed.</param>
+        public void DisplayStudent(Student student)
+        {
+            // Simply call the student's ToString() method
+            Console.WriteLine(student.ToString());
+        }
+
+        /// <summary>
+        /// Method <c>DisplayStudentAdded</c> displays the roster of students.
+        /// </summary>
+        /// <param name="roster">List of students to be displayed.</param>
         public void DisplayRoster(List<Student> roster)
         {
             Console.WriteLine("\nClass Roster:");
@@ -69,7 +131,25 @@ namespace MVC
             Console.WriteLine();
         }
 
-        // This method displays a goodbye message to the user
+        /// <summary>
+        /// Method <c>DisplayStudentAdded</c> displays a message to the user when a student could not be found in the roster.
+        /// </summary>
+        public void DisplayStudentNotFound()
+        {
+            Console.WriteLine("Student not found.\n");
+        }
+
+        /// <summary>
+        /// Method <c>DisplayStudentAdded</c> displays a message to the user when the roster is empty.
+        /// </summary>
+        public void DisplayNoStudentsInRoster()
+        {
+            Console.WriteLine("There are no students in the roster.\n");
+        }
+
+        /// <summary>
+        /// Method <c>DisplayStudentAdded</c> displays a goodbye message to the user.
+        /// </summary>
         public void DisplayGoodbye()
         {
             Console.WriteLine("Thank you for using the Class Roster Application!");
