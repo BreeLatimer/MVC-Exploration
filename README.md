@@ -1,7 +1,7 @@
 # MVC-Exploration
 This project is meant to demonstrate a basic understanding of the MVC design pattern.
 
-I completed the entirety of this project in one night. I haven't had any formal experience with working on a MVC application on a professional level, so I wanted to have something to
+I haven't had any formal experience with working on a MVC application on a professional level, so I wanted to have something to
 show to potential employers that I have a basic grasp on the model-view-controller design pattern.
 
 Overall this project was a lot of fun, and it wasn't difficult to implement. The application I chose to create is a simple class roster application that allows the "teacher" to add and remove
