@@ -11,9 +11,6 @@ namespace MVC
     /// </summary>
     class Model
     {
-        // The Model class has a reference to the View
-        private View view;
-
         // The Model class contains the data for the application
         private List<Student> roster;
 
@@ -23,7 +20,6 @@ namespace MVC
         /// <param name="view">View object to be used by the model.</param>
         public Model(View view)
         {
-            this.view = view;
             roster = new List<Student>();
         }
 
@@ -40,14 +36,18 @@ namespace MVC
         /// Method <c>RemoveStudent</c> removes a student from the roster.
         /// </summary>
         /// <param name="name">String representation of the name of the student to be removed from the roster.</param>
-        public void RemoveStudent(string name)
+        /// <returns>True if the student is successfully removed, false if not.</returns>
+        public bool RemoveStudent(string name)
         {
             Student? student = FindStudentInRoster(name);
 
             if (student != null)
             {
                 roster.Remove(student);
+                return true;
             }
+
+            return false;
         }
 
         /// <summary>
@@ -60,37 +60,14 @@ namespace MVC
         }
 
         /// <summary>
-        /// Method <c>ViewStudent</c> displays a student's information.
-        /// </summary>
-        /// <param name="name">String representation of the name of the student whose information should be displayed.</param>
-        public void ViewStudent(string name)
-        {
-            if (IsRosterEmpty())
-            {
-                view.DisplayNoStudentsInRoster();
-                return;
-            }
-
-            // Look up the student in the roster
-            Student? student = FindStudentInRoster(name);
-
-            // If the student was found, display the student's information
-            if (student != null)
-            {
-                view.DisplayStudent(student);
-            }
-        }
-
-        /// <summary>
         /// Method <c>FindStudentInRoster</c> finds a student in the roster.
         /// </summary>
         /// <param name="name">String representation of the student's name to be found in the roster.</param>
         /// <returns>A Student object whose name property matches the given string.</returns>
-        private Student? FindStudentInRoster(string name)
+        public Student? FindStudentInRoster(string name)
         {
             if (IsRosterEmpty())
             {
-                view.DisplayNoStudentsInRoster();
                 return null;
             }
 
@@ -99,7 +76,6 @@ namespace MVC
 
             if (student == null)
             {
-                view.DisplayStudentNotFound();
                 return null;
             }
 

@@ -102,7 +102,22 @@ namespace MVC
             } else
             {
                 string studentName = view.GetStudentName();
-                model.ViewStudent(studentName);
+
+                if (model.IsRosterEmpty())
+                {
+                    view.DisplayNoStudentsInRoster();
+                    return;
+                }
+
+                Student? student = model.FindStudentInRoster(studentName);
+
+                if (student != null)
+                {
+                    view.DisplayStudent(student);
+                } else
+                {
+                    view.DisplayStudentNotFound();
+                }
             }
         }
 
@@ -121,7 +136,13 @@ namespace MVC
             string name = view.GetStudentName();
 
             // Remove the student from the model
-            model.RemoveStudent(name);
+            bool studentRemoved = model.RemoveStudent(name);
+
+            if(!studentRemoved)
+            {
+                view.DisplayStudentNotFound();
+                return;
+            }
 
             // Display the student roster
             view.DisplayRoster(model.GetRoster());
