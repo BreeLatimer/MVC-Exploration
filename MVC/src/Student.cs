@@ -9,7 +9,7 @@ namespace MVC
     /// <summary>
     /// Class <c>Student</c> represents a student in the class roster.
     /// </summary>
-    class Student
+    public class Student
     {
         // Student properties
         public string Name { get; set; }

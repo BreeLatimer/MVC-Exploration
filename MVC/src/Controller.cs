@@ -12,7 +12,7 @@ namespace MVC
     /// <summary>
     /// Class <c>Controller</c> is the Controller class for the MVC application. Handles user input and updates the View and Model as needed.
     /// </summary>
-    class Controller
+    public class Controller
     {
         // The Controller class has a reference to both the View and the Model
         private View view;

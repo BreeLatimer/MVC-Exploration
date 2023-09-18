@@ -9,7 +9,7 @@ namespace MVC
     /// <summary>
     /// Class <c>Model</c> is the Model class for the MVC application. Handles the data and business logic for the application.
     /// </summary>
-    class Model
+    public class Model
     {
         // The Model class contains the data for the application
         private List<Student> roster;

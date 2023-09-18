@@ -9,7 +9,7 @@ namespace MVC
     /// <summary>
     /// Class <c>View</c> handles all user interaction and displays information to the user.
     /// </summary>
-    class View
+    public class View
     {
         // The View class has a reference to the Controller
         private Controller? controller;

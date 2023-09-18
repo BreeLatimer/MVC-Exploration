@@ -8,7 +8,7 @@ namespace MVC
     /// <summary>
     /// Class <c>Driver</c> is the driver class for the MVC application.
     /// </summary>
-    class Driver
+    public class Driver
     {
         /// <summary>
         /// Method <c>Main</c> is the entry point for the application.
