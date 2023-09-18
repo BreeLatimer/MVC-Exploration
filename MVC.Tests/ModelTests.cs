@@ -2,7 +2,7 @@ namespace MVC.Tests
 {
     public class ModelTests
     {
-        private Model _model;
+        private StudentModel _model;
         private Student studentOne;
         private Student studentTwo;
         private Student studentThree;
@@ -11,7 +11,7 @@ namespace MVC.Tests
         public void Setup()
         {
             // Instantiate the Model
-            _model = new Model();
+            _model = new StudentModel();
 
             // Create some students
             studentOne = new Student("John Doe", "3.5", "Computer Science", "Marching Band");
@@ -131,7 +131,7 @@ namespace MVC.Tests
             // Check that the roster returns true and the remaining student is studentTwo
             Assert.That(result, Is.True);
             Assert.That(_model.GetRoster().Count, Is.EqualTo(1));
-            Assert.That(_model.GetRoster()[0], Is.EqualTo(studentTwo));
+            Assert.That(_model.GetRoster().ElementAt(0), Is.EqualTo(studentTwo));
         }
 
         [Test]
@@ -143,7 +143,7 @@ namespace MVC.Tests
 
             // Act
             // Get the roster
-            List<Student> roster = _model.GetRoster();
+            IEnumerable<Student> roster = _model.GetRoster();
 
             // Assert
             // Check that the roster is empty
@@ -162,7 +162,7 @@ namespace MVC.Tests
 
             // Act
             // Get the roster
-            List<Student> roster = _model.GetRoster();
+            IEnumerable<Student> roster = _model.GetRoster();
 
             // Assert
             // Check that the roster contains one student
