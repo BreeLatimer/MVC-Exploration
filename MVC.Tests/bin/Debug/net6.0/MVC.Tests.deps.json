@@ -20,6 +20,14 @@
         }
       },
       "coverlet.collector/3.2.0": {},
+      "Microsoft.AspNetCore.SpaProxy/6.0.20": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll": {
+            "assemblyVersion": "6.0.20.0",
+            "fileVersion": "6.0.2023.32106"
+          }
+        }
+      },
       "Microsoft.CodeCoverage/17.5.0": {
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.VisualStudio.CodeCoverage.Shim.dll": {
@@ -317,7 +325,18 @@
       "NUnit.Analyzers/3.6.1": {},
       "NUnit3TestAdapter/4.4.2": {},
       "System.Reflection.Metadata/1.6.0": {},
+      "ClassRosterApp/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.SpaProxy": "6.0.20"
+        },
+        "runtime": {
+          "ClassRosterApp.dll": {}
+        }
+      },
       "MVC/1.0.0": {
+        "dependencies": {
+          "ClassRosterApp": "1.0.0"
+        },
         "runtime": {
           "MVC.dll": {}
         }
@@ -336,6 +355,13 @@
       "sha512": "sha512-xjY8xBigSeWIYs4I7DgUHqSNoGqnHi7Fv7/7RZD02rvZyG3hlsjnQKiVKVWKgr9kRKgmV+dEfu8KScvysiC0Wg==",
       "path": "coverlet.collector/3.2.0",
       "hashPath": "coverlet.collector.3.2.0.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.SpaProxy/6.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tjIBNu40rYdu8JJTJ1+inGmcDiL3N75O+f4lRr6N6Lqk5GJORmV+F7R8iEkn+EkN5pnUwybsFuphojCulTbobw==",
+      "path": "microsoft.aspnetcore.spaproxy/6.0.20",
+      "hashPath": "microsoft.aspnetcore.spaproxy.6.0.20.nupkg.sha512"
     },
     "Microsoft.CodeCoverage/17.5.0": {
       "type": "package",
@@ -420,6 +446,11 @@
       "sha512": "sha512-COC1aiAJjCoA5GBF+QKL2uLqEBew4JsCkQmoHKbN3TlOZKa2fKLz5CpiRQKDz0RsAOEGsVKqOD5bomsXq/4STQ==",
       "path": "system.reflection.metadata/1.6.0",
       "hashPath": "system.reflection.metadata.1.6.0.nupkg.sha512"
+    },
+    "ClassRosterApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "MVC/1.0.0": {
       "type": "project",

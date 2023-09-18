@@ -48,3 +48,13 @@ C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\obj\Debug\net6.0\refint\
 C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\obj\Debug\net6.0\MVC.pdb
 C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\obj\Debug\net6.0\MVC.genruntimeconfig.cache
 C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\obj\Debug\net6.0\ref\MVC.dll
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\obj\Debug\net6.0\MVC.csproj.AssemblyReference.cache
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\obj\Debug\net6.0\MVC.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\bin\Debug\net6.0\ClassRosterApp.deps.json
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\bin\Debug\net6.0\ClassRosterApp.runtimeconfig.json
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\bin\Debug\net6.0\spa.proxy.json
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\bin\Debug\net6.0\ClassRosterApp.exe
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\bin\Debug\net6.0\Microsoft.AspNetCore.SpaProxy.dll
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\bin\Debug\net6.0\ClassRosterApp.dll
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\bin\Debug\net6.0\ClassRosterApp.pdb
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC\obj\Debug\net6.0\MVC.csproj.CopyComplete

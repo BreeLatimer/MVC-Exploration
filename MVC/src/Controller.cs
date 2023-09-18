@@ -7,64 +7,35 @@
 // This project is meant to demonstrate the MVC design pattern and prove that I understand how it works.
 // The project is a simple class roster application that allows the user to add and remove students from a class roster.
 
+using Microsoft.AspNetCore.Mvc;
+
 namespace MVC
 {
     /// <summary>
     /// Class <c>Controller</c> is the Controller class for the MVC application. Handles user input and updates the View and Model as needed.
     /// </summary>
-    public class Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class Controller : ControllerBase
     {
+        public static void Main()
+        {
+            // TODO: remove me
+        }
+
         // The Controller class has a reference to both the View and the Model
         private View view;
-        private Model model;
+        private StudentModel model;
 
         /// <summary>
         /// Method <c>Controller</c> is the constructor for the Controller class.
         /// </summary>
         /// <param name="view">View object to be used to display/receive information to/from the user.</param>
         /// <param name="model">Model object to used to manipulate data.</param>
-        public Controller(View view, Model model)
+        public Controller(View view, StudentModel model)
         {
             this.view = view;
             this.model = model;
-        }
-
-        /// <summary>
-        /// Method <c>Start</c> is the entry point for the application. This method begins the main application loop.
-        /// </summary>
-        public void Start()
-        {
-            // Welcome the user
-            view.DisplayGreeting();
-
-            while (true)
-            {
-                // Display the main menu
-                view.DisplayMenu();
-
-                // Get the user's menu selection
-                int selection = view.GetMenuSelection();
-
-                // Handle the user's menu selection
-                switch (selection)
-                {
-                    case 1:
-                        AddStudent();
-                        break;
-                    case 2:
-                        ViewStudent();
-                        break;
-                    case 3:
-                        RemoveStudent();
-                        break;
-                    case 4:
-                        ViewRoster();
-                        break;
-                    case 5:
-                        Exit();
-                        break;
-                }
-            }
         }
 
         /// <summary>
@@ -126,7 +97,9 @@ namespace MVC
         /// </summary>
         public void RemoveStudent()
         {
-            if(model.GetRoster().Count == 0)
+            IEnumerable<Student> roster = model.GetRoster();
+
+            if(roster.Count() == 0)
             {
                 view.DisplayNoStudentsInRoster();
                 return;
@@ -151,17 +124,12 @@ namespace MVC
         /// <summary>
         /// Method <c>ViewRoster</c> is called when the user selects the "View Roster" option from the menu.
         /// </summary>
-        public void ViewRoster()
+        [HttpGet()]
+        public Student[] GetRoster()
         {
-            if(model.IsRosterEmpty())
-            {
-                view.DisplayNoStudentsInRoster();
-                return;
-            } else
-            {
-                // Display the student roster
-                view.DisplayRoster(model.GetRoster());
-            }
+            Student[] roster = model.GetRoster().ToArray();
+
+            return roster;
         }
 
         /// <summary>

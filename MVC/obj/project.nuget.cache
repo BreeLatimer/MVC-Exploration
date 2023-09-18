@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "86IlZ3lK0LxYg307RAiuInqpooYESa+vkfW+88ehTs3BIgbqTANnaOHGYKrHsnT8ZP5GbtcCfJam02u9hoyr2g==",
+  "dgSpecHash": "KBRhi07hWXjj0KOVUr1ZuN6Ooy2ilnPbzLM8iGdYqMlZ+jbMb3/dd9q3JMAq91Fa5t3/yFs+/uKVtKPO0tt5Vw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Brandon\\Documents\\Projects\\MVC-Exploration\\MVC\\MVC.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Brandon\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\6.0.20\\microsoft.aspnetcore.spaproxy.6.0.20.nupkg.sha512"
+  ],
   "logs": []
 }

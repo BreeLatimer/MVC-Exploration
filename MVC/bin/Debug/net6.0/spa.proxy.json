@@ -1,0 +1,8 @@
+{
+"SpaProxyServer": {
+"ServerUrl": "https://localhost:44476",
+"LaunchCommand": "npm start",
+"WorkingDirectory": "C:\\Users\\Brandon\\Documents\\Projects\\MVC-Exploration\\ClassRosterApp\\ClientApp\\",
+"MaxTimeoutInSeconds": "120"
+}
+}

@@ -105,3 +105,10 @@ C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\a
 C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\MVC.exe
 C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\MVC.dll
 C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\MVC.pdb
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\ClassRosterApp.deps.json
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\ClassRosterApp.runtimeconfig.json
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\spa.proxy.json
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\ClassRosterApp.exe
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\Microsoft.AspNetCore.SpaProxy.dll
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\ClassRosterApp.dll
+C:\Users\Brandon\Documents\Projects\MVC-Exploration\MVC.Tests\bin\Debug\net6.0\ClassRosterApp.pdb

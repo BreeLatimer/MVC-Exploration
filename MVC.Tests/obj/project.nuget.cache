@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lBdOmGFgz70n7n7/fAnSP41c6ZEnN9qT/L95N8vplblZ7rY3sGadft62nvtwPcglLVcR9v2XWJFEHJUCKxHBQw==",
+  "dgSpecHash": "fs+4zbQxfwQpwB+auSadDtcAUMJcsRLxAmX6tqonDx22st0IfRwVvH46nJGZQezvhbAEmRwnHlFcOGatfGqscg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Brandon\\Documents\\Projects\\MVC-Exploration\\MVC.Tests\\MVC.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Brandon\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
+    "C:\\Users\\Brandon\\.nuget\\packages\\microsoft.aspnetcore.spaproxy\\6.0.20\\microsoft.aspnetcore.spaproxy.6.0.20.nupkg.sha512",
     "C:\\Users\\Brandon\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
     "C:\\Users\\Brandon\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
     "C:\\Users\\Brandon\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

@@ -7,14 +7,45 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "MVC/1.0.0": {
+        "dependencies": {
+          "ClassRosterApp": "1.0.0"
+        },
         "runtime": {
           "MVC.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.SpaProxy/6.0.20": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.SpaProxy.dll": {
+            "assemblyVersion": "6.0.20.0",
+            "fileVersion": "6.0.2023.32106"
+          }
+        }
+      },
+      "ClassRosterApp/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.SpaProxy": "6.0.20"
+        },
+        "runtime": {
+          "ClassRosterApp.dll": {}
         }
       }
     }
   },
   "libraries": {
     "MVC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.SpaProxy/6.0.20": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tjIBNu40rYdu8JJTJ1+inGmcDiL3N75O+f4lRr6N6Lqk5GJORmV+F7R8iEkn+EkN5pnUwybsFuphojCulTbobw==",
+      "path": "microsoft.aspnetcore.spaproxy/6.0.20",
+      "hashPath": "microsoft.aspnetcore.spaproxy.6.0.20.nupkg.sha512"
+    },
+    "ClassRosterApp/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

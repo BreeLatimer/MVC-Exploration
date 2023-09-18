@@ -121,7 +121,7 @@ namespace MVC
         /// Method <c>DisplayStudentAdded</c> displays the roster of students.
         /// </summary>
         /// <param name="roster">List of students to be displayed.</param>
-        public void DisplayRoster(List<Student> roster)
+        public void DisplayRoster(IEnumerable<Student> roster)
         {
             Console.WriteLine("\nClass Roster:");
             foreach (Student student in roster)

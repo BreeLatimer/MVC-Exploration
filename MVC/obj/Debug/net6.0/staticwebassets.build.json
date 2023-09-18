@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "r6RW0BjYAOLu/nvxZSSpfRoQRpxtoPQ6w9xKVsHe7r0=",
+  "Hash": "qsV6R6fh2f3uMWepbxiYI+641Al9l3Wk5xV9VlPuLKY=",
   "Source": "MVC",
   "BasePath": "_content/MVC",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "C:\\Users\\Brandon\\Documents\\Projects\\MVC-Exploration\\ClassRosterApp\\ClassRosterApp.csproj",
+      "Version": 2,
+      "Source": "ClassRosterApp",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [],
   "Assets": []
 }

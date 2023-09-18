@@ -5,7 +5,9 @@ VisualStudioVersion = 17.7.34009.444
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC", "MVC\MVC.csproj", "{EF92BF92-CE5A-4D3F-BACF-645009A729BF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC.Tests", "MVC.Tests\MVC.Tests.csproj", "{A6A9EA1D-1449-4E94-B481-96BE6D242F7B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC.Tests", "MVC.Tests\MVC.Tests.csproj", "{A6A9EA1D-1449-4E94-B481-96BE6D242F7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassRosterApp", "ClassRosterApp\ClassRosterApp.csproj", "{4D4D355E-EF19-4414-B464-A33F83887A77}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A6A9EA1D-1449-4E94-B481-96BE6D242F7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6A9EA1D-1449-4E94-B481-96BE6D242F7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6A9EA1D-1449-4E94-B481-96BE6D242F7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4D355E-EF19-4414-B464-A33F83887A77}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4D355E-EF19-4414-B464-A33F83887A77}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4D355E-EF19-4414-B464-A33F83887A77}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4D355E-EF19-4414-B464-A33F83887A77}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

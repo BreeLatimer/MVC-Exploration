@@ -3,7 +3,7 @@ namespace MVC.Tests
     public class ModelTests
     {
         private View _view;
-        private Model _model;
+        private StudentModel _model;
         private Student studentOne;
         private Student studentTwo;
         private Student studentThree;
@@ -13,7 +13,7 @@ namespace MVC.Tests
         {
             // Instantiate the View and Model
             _view = new View();
-            _model = new Model(_view);
+            _model = new StudentModel(_view);
 
             // Create some students
             studentOne = new Student("John Doe", "3.5", "Computer Science", "Marching Band");

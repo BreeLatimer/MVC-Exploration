@@ -9,7 +9,7 @@ namespace MVC
     /// <summary>
     /// Class <c>Model</c> is the Model class for the MVC application. Handles the data and business logic for the application.
     /// </summary>
-    public class Model
+    public class StudentModel
     {
         // The Model class contains the data for the application
         private List<Student> roster;
@@ -18,7 +18,7 @@ namespace MVC
         /// Method <c>Model</c> is the constructor for the Model class.
         /// </summary>
         /// <param name="view">View object to be used by the model.</param>
-        public Model(View view)
+        public StudentModel(View view)
         {
             roster = new List<Student>();
         }
@@ -54,7 +54,7 @@ namespace MVC
         /// Method <c>GetRoster</c> returns the roster.
         /// </summary>
         /// <returns>A List of Student objects.</returns>
-        public List<Student> GetRoster()
+        public IEnumerable<Student> GetRoster()
         {
             return roster;
         }
