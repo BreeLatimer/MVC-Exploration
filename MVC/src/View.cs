@@ -67,14 +67,30 @@ namespace MVC
             return selection;
         }
 
-        /// <summary>
-        /// Method <c>GetStudentName</c> gets the student's name from the user.
-        /// </summary>
-        /// <returns>String representation of the name of the student as given by the user.</returns>
         public string GetStudentName()
         {
             Console.WriteLine("Please enter the student's name:");
             return Console.ReadLine()!;
+        }
+
+        /// <summary>
+        /// Method <c>GetStudentName</c> gets the student's name from the user.
+        /// </summary>
+        /// <returns>String representation of the name of the student as given by the user.</returns>
+        public int GetStudentId()
+        {
+            Console.WriteLine("Please enter the student's name:");
+            string stringId = Console.ReadLine()!;
+
+            // parse int from stringId
+            int id;
+            while (!int.TryParse(stringId, out id))
+            {
+                Console.WriteLine("Invalid input. Please enter a number.\n");
+                stringId = Console.ReadLine()!;
+            }
+
+            return id!;
         }
 
         /// <summary>

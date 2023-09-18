@@ -106,10 +106,10 @@ namespace MVC
             }
 
             // Get the student's name from the user
-            string name = view.GetStudentName();
+            int id = view.GetStudentId();
 
             // Remove the student from the model
-            bool studentRemoved = model.RemoveStudent(name);
+            bool studentRemoved = model.RemoveStudent(id);
 
             if(!studentRemoved)
             {

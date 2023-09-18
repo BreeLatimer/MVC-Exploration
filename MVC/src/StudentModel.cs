@@ -36,9 +36,9 @@ namespace MVC
         /// </summary>
         /// <param name="name">String representation of the name of the student to be removed from the roster.</param>
         /// <returns>True if the student is successfully removed, false if not.</returns>
-        public bool RemoveStudent(string name)
+        public bool RemoveStudent(int id)
         {
-            Student? student = FindStudentInRoster(name);
+            Student? student = FindStudentInRoster(id);
 
             if (student != null)
             {
@@ -63,7 +63,7 @@ namespace MVC
         /// </summary>
         /// <param name="name">String representation of the student's name to be found in the roster.</param>
         /// <returns>A Student object whose name property matches the given string.</returns>
-        public Student? FindStudentInRoster(string name)
+        public Student? FindStudentInRoster(int id)
         {
             if (IsRosterEmpty())
             {
@@ -71,7 +71,7 @@ namespace MVC
             }
 
             // Find the student in the roster
-            Student student = roster.Find(s => s.Name == name)!;
+            Student student = roster.Find(s => s.Id == id)!;
 
             if (student == null)
             {

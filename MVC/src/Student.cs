@@ -12,6 +12,7 @@ namespace MVC
     public class Student
     {
         // Student properties
+        public int Id { get; set; }
         public string Name { get; set; }
         public string GPA { get; set; }
         public string Major { get; set; }
@@ -24,8 +25,9 @@ namespace MVC
         /// <param name="gpa">String representation of the GPA of the student.</param>
         /// <param name="major">String representation of the student's major.</param>
         /// <param name="extraCurricular">String representation of the student's extra curricular activity.</param>
-        public Student(string name, string gpa, string major, string extraCurricular)
+        public Student(int id, string name, string gpa, string major, string extraCurricular)
         {
+            Id = id;
             Name = name;
             GPA = gpa;
             Major = major;
@@ -39,6 +41,7 @@ namespace MVC
         public override string ToString()
         {
             string studentInfo = "\nStudent Information";
+            studentInfo += "\nID: " + Id;
             studentInfo += "\nName: " + Name;
             studentInfo += "\nGPA: " + GPA;
             studentInfo += "\nMajor: " + Major;
