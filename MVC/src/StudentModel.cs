@@ -20,6 +20,12 @@ namespace MVC
         public StudentModel()
         {
             roster = new List<Student>();
+            
+            // populate with fake students
+            // TODO: remove me
+            roster.Add(new Student(1, "John Doe", "3.5", "Computer Science", "Marching Band"));
+            roster.Add(new Student(2, "Jane Doe", "3.8", "Applied Mathematics", "Chess Club"));
+            roster.Add(new Student(3, "Bob Smith", "3.2", "Biology", "Recycling Club"));
         }
 
         /// <summary>

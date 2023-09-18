@@ -1,31 +1,23 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 
-export class Counter extends Component {
-    static displayName = Counter.name;
+const ClassRoster = () => {
+    // Declare a new state variable, which we'll call "students"
+    const [students, setStudents] = useState([]);
 
-    constructor(props) {
-        super(props);
-        this.state = { currentCount: 0 };
-        this.incrementCounter = this.incrementCounter.bind(this);
-    }
+    useEffect(() => {
+// GET request using fetch inside useEffect React hook
+        fetch('https://localhost:44364/api/Students')
+            .then(response => response.json())
+            .then(data => setStudents(data));
+    }, []);
 
-    incrementCounter() {
-        this.setState({
-            currentCount: this.state.currentCount + 1
-        });
-    }
-
-    render() {
-        return (
-            <div>
-                <h1>Class Roster</h1>
-
-                <p>This is a simple example of a class roster application.</p>
-
-                <p aria-live="polite">Current count: <strong>{this.state.currentCount}</strong></p>
-
-                <button className="btn btn-primary" onClick={this.incrementCounter}>Increment</button>
-            </div>
-        );
-    }
+    return (
+        <div>
+            <h1>Class Roster</h1>
+            {
+                students.map((item) => <h3>{item.title}</h3>)
+            }
+        </div>
+    );
 }
+export default ClassRoster;
