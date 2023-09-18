@@ -17,8 +17,7 @@ namespace MVC
         /// <summary>
         /// Method <c>Model</c> is the constructor for the Model class.
         /// </summary>
-        /// <param name="view">View object to be used by the model.</param>
-        public Model(View view)
+        public Model()
         {
             roster = new List<Student>();
         }

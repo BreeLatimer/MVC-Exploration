@@ -20,7 +20,7 @@ namespace MVC
             View view = new View()!;
 
             // Create the Model
-            Model model = new Model(view);
+            Model model = new Model();
 
             // Create the Controller
             Controller controller = new Controller(view, model);
