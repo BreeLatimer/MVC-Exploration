@@ -14,9 +14,9 @@ namespace MVC.Tests
             _model = new StudentModel();
 
             // Create some students
-            studentOne = new Student("John Doe", "3.5", "Computer Science", "Marching Band");
-            studentTwo = new Student("Jane Doe", "3.8", "Applied Mathematics", "Chess Club");
-            studentThree = new Student("Bob Smith", "3.2", "Biology", "Recycling Club");
+            studentOne = new Student(1, "John Doe", "3.5", "Computer Science", "Marching Band");
+            studentTwo = new Student(2, "Jane Doe", "3.8", "Applied Mathematics", "Chess Club");
+            studentThree = new Student(3, "Bob Smith", "3.2", "Biology", "Recycling Club");
 
         }
 
@@ -64,7 +64,7 @@ namespace MVC.Tests
 
             // Act
             // Remove a student from the roster
-            bool result = _model.RemoveStudent(studentOne.Name);
+            bool result = _model.RemoveStudent(studentOne.Id);
 
             // Assert
             // Check that the roster returns false and still contains 0 students
@@ -84,7 +84,7 @@ namespace MVC.Tests
 
             // Act
             // Remove a student from the roster
-            bool result = _model.RemoveStudent(studentOne.Name);
+            bool result = _model.RemoveStudent(studentOne.Id);
 
             // Assert
             // Check that the roster returns true and contains 0 students
@@ -105,7 +105,7 @@ namespace MVC.Tests
 
             // Act
             // Remove a student from the roster
-            bool result = _model.RemoveStudent(studentOne.Name);
+            bool result = _model.RemoveStudent(studentOne.Id);
 
             // Assert
             // Check that the roster returns true and contains 1 student
@@ -125,7 +125,7 @@ namespace MVC.Tests
 
             // Act
             // Remove a student from the roster
-            bool result = _model.RemoveStudent(studentOne.Name);
+            bool result = _model.RemoveStudent(studentOne.Id);
 
             // Assert
             // Check that the roster returns true and the remaining student is studentTwo
@@ -178,7 +178,7 @@ namespace MVC.Tests
 
             // Act
             // Find a student in the roster
-            Student? student = _model.FindStudentInRoster(studentOne.Name);
+            Student? student = _model.FindStudentInRoster(studentOne.Id);
 
             // Assert
             // Check that the roster returns null
@@ -197,7 +197,7 @@ namespace MVC.Tests
 
             // Act
             // Find a student in the roster
-            Student? student = _model.FindStudentInRoster(studentOne.Name);
+            Student? student = _model.FindStudentInRoster(studentOne.Id);
 
             // Assert
             // Check that the roster returns the student
@@ -217,7 +217,7 @@ namespace MVC.Tests
 
             // Act
             // Find a student in the roster
-            Student? student = _model.FindStudentInRoster(studentOne.Name);
+            Student? student = _model.FindStudentInRoster(studentOne.Id);
 
             // Assert
             // Check that the roster returns the student
