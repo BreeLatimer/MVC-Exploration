@@ -44,6 +44,8 @@ namespace MVC
         public void AddStudent()
         {
             // Get the student's name from the user
+            int id = view.GetStudentId();
+
             string name = view.GetStudentName();
 
             string gpa = view.GetStudentGPA();
@@ -53,7 +55,7 @@ namespace MVC
             string extraCurricular = view.GetStudentEC();
 
             // Create a new student object
-            Student student = new Student(name, gpa, major, extraCurricular);
+            Student student = new Student(id, name, gpa, major, extraCurricular);
 
             // Add the student to the model
             model.AddStudent(student);
@@ -72,7 +74,7 @@ namespace MVC
                 view.DisplayNoStudentsInRoster();
             } else
             {
-                string studentName = view.GetStudentName();
+                int studentId = view.GetStudentId();
 
                 if (model.IsRosterEmpty())
                 {
@@ -80,7 +82,7 @@ namespace MVC
                     return;
                 }
 
-                Student? student = model.FindStudentInRoster(studentName);
+                Student? student = model.FindStudentInRoster(studentId);
 
                 if (student != null)
                 {
