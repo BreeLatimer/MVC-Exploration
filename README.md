@@ -17,3 +17,6 @@ isn't nearly as difficult as I thought it would be and if you want to change a f
 I have decided to continue expansion on this project in order to turn it into a proper full-stack application. Going forward this project will be intended to be a demonstration of my understanding of
 multiple areas of expertise; from understanding MVC as a design pattern, to database integration, to adding a more appealing front-end using React. I decided to take the time during this programming session
 to add CI support along with unit testing support in order to better ensure the longevity of this project.
+
+## Update: 9/22/2023
+Transferring this application to utilize ASP.NET MVC is proving to be more difficult that I initially realized. I am considering making a separate folder for the legacy version and then attempting to take that same concept and apply it to this more full-fledged and better thought out application design.
